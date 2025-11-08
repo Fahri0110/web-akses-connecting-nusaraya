@@ -79,7 +79,7 @@ export default function Home() {
       <section className="relative flex items-center justify-end h-screen overflow-hidden">
       {/* 🎥 Background Video */}
       <video
-        src="/media/panjat123.mp4" // ganti dengan nama video kamu
+        src="/media/panjat.mp4" // ganti dengan nama video kamu
         autoPlay
         loop
         muted
