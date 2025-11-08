@@ -30,56 +30,58 @@ export default function Media() {
       title: "BPOLBF Lakukan Mou bersama Investor semesta Indo Resort dan PT AKCON",
       excerpt: "LABUAN BAJO KOMPAS.com - Kawasan Parapuar di Labuan Bajo, Kabupaten Manggarai Barat, Nusa Tenggara Timur (NTT), terus diminati para investor untuk berinvestasi.",
       category: "news",
+      date: "8 Agustus 2024",
       author: "Tim AKCON",
-      date: "15 Maret 2024",
-      readTime: "5 menit",
       image: "/media/kompas2.png",
       views: 1250,
       likes: 45,
       comments: 12,
       tags: ["SITAC", "4G", "5G", "Telekomunikasi"],
+      Link: "https://regional.kompas.com/image/2024/08/08/170655078/kuartal-pertama-2024-realisasi-investasi-di-labuan-bajo-capai-rp-570-miliar",
+      
     },
     {
       id: 2,
       title: "Kolaborasi PT AKCON dan SKYLINK",
       excerpt: "Jakarta, JurnalPost.com – PT Akses Connecting Nusaraya (AKCON) dan PT Sinergi Innovate Pratama (SKYLINK) baru saja melangkah ke fase baru kolaborasi teknologi dengan menandatangani perjanjian kerjasama strategis pada Jumat, 20 September 2024. Dalam momen ini, kedua perusahaan sepakat untuk memajukan konektivitas di Indonesia melalui pemasaran layanan internet satelit Starlink, sebuah inovasi dari SpaceX yang didirikan oleh Elon Musk.",
       category: "innovation",
-      author: "Dr. Budi Santoso",
-      date: "10 Maret 2024",
-      readTime: "7 menit",
+      author: "Annisa",
+      date: "21 September 2024",
       image: "/media/skylink.png",
       views: 890,
       likes: 32,
       comments: 8,
-      tags: ["IoT", "Smart City", "Inovasi", "Digital"]
+      tags: ["IoT", "Smart City", "Inovasi", "Digital"],
+      Link: "https://jurnalpost.com/akcon-dan-skylink-jalin-kerjasama-strategis-digitalisasi-seluruh-negeri-dengan-starlink/72456/",
     },
     {
       id: 3,
       title: "Indosat Oreedo Hutchison dan PT Akses Connecting Nusaraya Tanda Tangani Perjanjian Berjasama di Bidang Enterprise",
-      excerpt: "Jakarta, JurnalPost.com – Indosat Ooredoo Hutchison (IOH) dan PT Akses Connecting Nusantara (AKCON) hari ini secara resmi melaksanakan penandatanganan perjanjian kerjasama strategis di bidang enterprise dalam sebuah acara yang di gelar di Midori Japanese Jakarta. Kerjasama ini bertujuan untuk memperkuat layanan solusi teknologi dan komunikasi bagi sektor bisnis di Indonesia.",
+      excerpt: "Jakarta, JurnalPost.com – Indosat Ooredoo Hutchison (IOH) dan PT Akses Connecting Nusaraya (AKCON) hari ini secara resmi melaksanakan penandatanganan perjanjian kerjasama strategis di bidang enterprise dalam sebuah acara yang di gelar di Midori Japanese Jakarta. Kerjasama ini bertujuan untuk memperkuat layanan solusi teknologi dan komunikasi bagi sektor bisnis di Indonesia.",
       category: "news",
-      author: "Corporate Communications",
-      date: "5 Maret 2024",
-      readTime: "4 menit",
+      author: "Nadia",
+      date: "15 Agustus 2024",
       image: "/media/ioh.png",
       views: 2100,
       likes: 78,
       comments: 23,
-      tags: ["Partnership", "5G", "Telekomunikasi", "Nasional"]
+      tags: ["Partnership", "5G", "Telekomunikasi", "Nasional"],
+      Link: "https://jurnalpost.com/indosat-ooredoo-hutchison-dan-pt-akses-connecting-nusaraya-tandatangani-perjanjian-kerjasama-di-bidang-enterprise/71493/",
     },
     {
       id: 4,
       title: "Perusahaan Bidang Tambang, Komunikasi dan Properti Bangun Kemitraan Strategis ",
       excerpt: "Jakarta, Gatra.com - PT Akses Connecting Nusaraya (AKCON), PT Edotco Infrastruktur Indonesia, dan PT PAM Aneka Mineral meneken kerjasama bisnis pada Jumat, (23/02) lalu, berupa penandatanganan Lease Agreement yang menjadi kesepakatan bersejarah, karena melibatkan kerjasama tiga pelaku usaha di sektor industri berbeda, yaitu sektor telekomunikasi dan pertambangan juga properti.",
-      category: "awards",
+      category: "News",
       author: "Marketing Team",
-      date: "1 Maret 2024",
-      readTime: "3 menit",
+      date: "24 Februari 2024",
+      readTime: "",
       image: "/media/pam.png",
       views: 1560,
       likes: 92,
       comments: 15,
-      tags: ["Award", "Achievement", "Technology", "Recognition"]
+      tags: ["News", "Achievement", "Technology", "Recognition"],
+      Link: "https://www.gatra.com/news-593400-ekonomi-perusahaan-bidang-tambang-komunikasi-dan-properti-bangun-kemitraan-strategis.html",
     }
   ]
 
@@ -115,7 +117,13 @@ export default function Media() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white bg-no-repeat bg-cover" style={{ backgroundImage: "url('/media/koran.jpg')" }}>
+<section
+  className="relative pt-24 pb-16 bg-no-repeat bg-cover bg-center"
+  style={{ backgroundImage: "url('/media/koran.jpg')" }}
+>
+  {/* Overlay putih transparan */}
+  <div className="absolute inset-0 bg-white opacity-60"></div>
+
         <div className="relative h-60 lg:h-full min-h-[350px] overflow-hidden shadow-6x2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -123,6 +131,7 @@ export default function Media() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
+            
             <Badge className="mb-6 bg-blue-100 text-blue-900 border-blue-200">Media & Updates</Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Latest News &
@@ -150,11 +159,13 @@ export default function Media() {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {featuredArticles.map((article, index) => (
-              <motion.div
+              <motion.a
                 key={article.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                href={article.Link}
+                target="_blank"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md overflow-hidden group cursor-pointer">
                   <div className="relative overflow-hidden">
@@ -216,7 +227,7 @@ export default function Media() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </div>
@@ -264,13 +275,15 @@ export default function Media() {
           </motion.div>
 
           {/* Articles Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredArticles.map((article, index) => (
-              <motion.div
+          <div className="grid lg:grid-cols-3 gap-8">
+            {featuredArticles.map((article, index) => (
+              <motion.a
                 key={article.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                href={article.Link}
+                target="_blank"
               >
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md overflow-hidden group cursor-pointer">
                   <div className="relative overflow-hidden">
@@ -331,7 +344,7 @@ export default function Media() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
 

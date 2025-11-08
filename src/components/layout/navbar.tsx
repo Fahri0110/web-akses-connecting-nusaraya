@@ -86,11 +86,12 @@ export default function Navbar({ currentPage }: NavbarProps) {
                 )}
               </Link>
             ))}
-            <link href="https://mail.hostinger.com/?_task=mail&_mbox=INBOX"></link>
+            <Link href="https://mail.hostinger.com/?_task=mail&_mbox=INBOX">
             <Button   className="bg-[#0F3C27] text-white border border-white px-4 py-2 rounded-lg hover:bg-[#4BAE4F] transition duration-300 ease-in-out">
               <Phone className="w-4 h-4 mr-2" />
               Get Quote
             </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}

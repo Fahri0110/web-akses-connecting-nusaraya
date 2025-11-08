@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 import Layout from '@/components/layout/layout'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Video } from 'lucide-react'
 
 export default function About() {
   const values = [
@@ -69,13 +70,13 @@ export default function About() {
     {
       name: "Arli Halvian Hakim",
       role: "Operation Director",
-      description: "Mengawasi eksekusi proyek dengan standar kualitas tertinggi dan efisiensi operasional.",
+      description: "Managing project execution to achieve top quality standards and optimized efficiency.",
       avatar: "/Copilot_20251103_145031.png"
     },
     {
       name: "R Yudanur",
       role: "Head Of Operation & Finance",
-      description: "Mendorong inovasi teknologi dan solusi digital untuk kebutuhan klien yang terus berkembang.",
+      description: "Promoting technological innovation and digital solutions for clients’ continuously growing needs.",
       avatar: "/Copilot_20251103_145031.png"
     },
   ]
@@ -91,17 +92,15 @@ export default function About() {
       {/* Hero Section */}
       
         
-      <section className="relative h-[50vh] overflow-hidden">
-  <img
-    src="/media/semanggi.jpeg"
-    alt="Background"
-    className="absolute top-0 left-0 w-full h-[50vh] object-cover z-0"
+      <section className="relative h-[65vh] overflow-hidden">
+  <video
+        src="/media/semanggi-2.mp4" // ganti dengan nama video kamu
+        autoPlay
+        loop
+        muted
+        playsInline
+    className="absolute top-0 left-0 w-full h-[65vh]  object-cover z-0"
   />
-   <div className="mt-6">
-
-        <Badge className="mb-6 bg-blue-100 text-blue-900 border-blue-200">About Us</Badge>
-
-    </div>
   <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-white text-center px-4 bg-black/40">
 
   <Badge className="mb-6 bg-blue-100 text-blue-900 border-blue-200">About Us</Badge>

@@ -92,19 +92,12 @@ export default function Home() {
 
       {/* ✨ Konten utama */}
       <motion.div
+      
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       className="relative z-10 text-left text-white px-6 max-w-4xl"
     >
-      <Image
-        src="/media/1.png"
-        alt="AKCON Logo"
-        width={350}
-        height={350}
-        className="flex flex-col sm:flex-row items-start bg-cover bg-center px8"
-        priority
-      />
 
 <h2 className="text-3xl md:text-5xl font-extrabold mb-6 pr-25 text-left">
   Connecting Innovation <br />
