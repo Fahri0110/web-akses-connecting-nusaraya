@@ -43,7 +43,7 @@ export default function About() {
     {
       year: "2024",
       title: "Founding of AKCON",
-      description: "PT Akses Connecting Nusantara was officially established in January 2024, focusing on telecommunications and IT infrastructure solutions.",
+      description: "PT Akses Connecting Nusaraya was officially established in January 2024, focusing on telecommunications and IT infrastructure solutions.",
       icon: Calendar
     },
     {
@@ -94,7 +94,7 @@ export default function About() {
         
       <section className="relative h-[65vh] overflow-hidden">
   <video
-        src="/media/semanggi-2.mp4" // ganti dengan nama video kamu
+        src="/media/ampera2.mp4" // ganti dengan nama video kamu
         autoPlay
         loop
         muted

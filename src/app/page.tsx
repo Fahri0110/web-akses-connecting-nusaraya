@@ -98,6 +98,14 @@ export default function Home() {
       transition={{ duration: 0.8 }}
       className="relative z-10 text-left text-white px-6 max-w-4xl"
     >
+      <Image
+                        src="/media/1.png"
+                        alt="AKCON Logo"
+                        width={250}
+                        height={300}
+                        className="object-contain"
+                        priority
+                      />
 
 <h2 className="text-3xl md:text-5xl font-extrabold mb-6 pr-25 text-left">
   Connecting Innovation <br />

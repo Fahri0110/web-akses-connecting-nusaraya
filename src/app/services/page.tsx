@@ -171,9 +171,17 @@ export default function Services() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white bg-no-repeat bg-cover" style={{ backgroundImage: "url('/media/bingkai-kantor.jpeg')" }}>
-        <div className="relative h-60 lg:h-full min-h-[350px] rounded-2xl overflow-hidden shadow-2xl">
-          <motion.div
+      <section className="relative h-[65vh] overflow-hidden">
+  <video
+        src="/media/tower.mp4" // ganti dengan nama video kamu
+        autoPlay
+        loop
+        muted
+        playsInline
+    className="absolute top-0 left-0 w-full h-[65vh]  object-cover z-0"
+  />
+  <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-white text-center px-4 bg-black/40">
+<motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -382,7 +390,7 @@ export default function Services() {
               <Link href="/contact">
                 <Button size="lg" className="bg-[#0F3C27] text-white  px-4 py-2 rounded-lg hover:bg-[#4BAE4F] transition duration-300 ease-in-out">
                   <Phone className="mr-2 w-5 h-5" />
-                  Free Consultation
+                  Contac Us
                 </Button>
               </Link>
               <Button size="lg" className="bg-[#0F3C27] text-white  px-4 py-2 rounded-lg hover:bg-[#4BAE4F] transition duration-300 ease-in-out">

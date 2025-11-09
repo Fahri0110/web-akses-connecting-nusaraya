@@ -90,6 +90,7 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
             className="lg:col-span-1"
           >
+            <Link href="/" className="flex items-center space-x-2 group">
                <Image
                   src="/logo/logo.warna.kecil.png"
                   alt="AKCON Logo"
@@ -98,6 +99,7 @@ export default function Footer() {
                   className="object-contain"
                   priority
                 />
+                </Link>
             
             
             <div className="flex items-center space-x-2 mb-4">

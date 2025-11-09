@@ -31,13 +31,13 @@ export default function Media() {
       excerpt: "LABUAN BAJO KOMPAS.com - Kawasan Parapuar di Labuan Bajo, Kabupaten Manggarai Barat, Nusa Tenggara Timur (NTT), terus diminati para investor untuk berinvestasi.",
       category: "news",
       date: "8 Agustus 2024",
-      author: "Tim AKCON",
+      author: "Nansianus Taris",
       image: "/media/kompas2.png",
       views: 1250,
       likes: 45,
       comments: 12,
       tags: ["SITAC", "4G", "5G", "Telekomunikasi"],
-      Link: "https://regional.kompas.com/image/2024/08/08/170655078/kuartal-pertama-2024-realisasi-investasi-di-labuan-bajo-capai-rp-570-miliar",
+      Link: "https://travel.kompas.com/read/2024/08/08/190700327/investasi-di-parapuar-labuan-bajo-didorong-dukung-pariwisata-berkelanjutan",
       
     },
     {
@@ -85,7 +85,7 @@ export default function Media() {
     }
   ]
 
-  const featuredArticles = articles.slice(0, 3)
+  const featuredArticles = articles.slice(0, 4)
 
   const filteredArticles = articles.filter(article => {
     const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -338,7 +338,7 @@ export default function Media() {
                         </div>
                       </div>
                       <Button size="sm" variant="ghost" className="text-blue-900 hover:bg-blue-50 p-0 h-auto">
-                        Baca Selengkapnya
+                        Read more
                         <ChevronRight className="w-4 h-4 ml-1" />
                       </Button>
                     </div>
@@ -350,7 +350,7 @@ export default function Media() {
 
           {filteredArticles.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">Tidak ada artikel yang ditemukan untuk pencarian "{searchTerm}"</p>
+              <p className="text-gray-500 text-lg">No articles found for search "{searchTerm}"</p>
             </div>
           )}
         </div>
