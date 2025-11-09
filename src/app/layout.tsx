@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "",
-    description: "AI-powered development with modern React stack",
+    description: "",
     url: "https://chat.z.ai",
     siteName: "Z.ai",
     type: "website",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "",
-    description: "AI-powered development with modern React stack",
+    description: "",
   },
 };
 
