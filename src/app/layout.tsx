@@ -16,14 +16,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "PT AKSES CONNECTING NUSARAYA",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
+  description: "",
   keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
   authors: [{ name: "Z.ai Team" }],
   icons: {
     icon: "/media/akcon.logo.baru.ico",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
+    title: "",
     description: "AI-powered development with modern React stack",
     url: "https://chat.z.ai",
     siteName: "Z.ai",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
+    title: "",
     description: "AI-powered development with modern React stack",
   },
 };
