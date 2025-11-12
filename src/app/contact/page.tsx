@@ -143,7 +143,7 @@ export default function Contact() {
               Let’s Collaborate
               <span className="text-green-950"> for a Digital Future</span>
             </h1>
-            <p className="text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
              Our professional team is ready to support your telecommunications and IT infrastructure needs with the best solutions
             </p>
           </motion.div>
@@ -489,7 +489,7 @@ export default function Contact() {
     rounded-lg hover:bg-[#4BAE4F] transition duration-300 ease-in-out"
   >
     <Phone className="w-5 h-5 mr-2" />
-    Free Consultation
+    Contact Us 
   </a>
              
              <a

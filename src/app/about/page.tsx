@@ -57,6 +57,12 @@ export default function About() {
       title: "Service Expansion",
       description: "Launched Enterprise System & IT Solutions to accelerate digital transformation for businesses nationwide.",
       icon: Target
+    },
+    {
+      year: "2025",
+      title: "SWAP Project Delivered",
+      description: "AKCON successfully executed the SWAP Project for Huawei, focusing on system upgrades and seamless infrastructure transition. This milestone reflects AKCON’s commitment to precision, reliability, and future-ready solutions.",
+      icon: Briefcase
     }
   ]
 
@@ -94,20 +100,20 @@ export default function About() {
         
       <section className="relative h-[65vh] overflow-hidden">
   <video
-        src="/media/ampera2.mp4" // ganti dengan nama video kamu
+        src="/media/BL-JKT.mp4" // ganti dengan nama video kamu
         autoPlay
         loop
         muted
         playsInline
-    className="absolute top-0 left-0 w-full h-[65vh]  object-cover z-0"
+    className="absolute top-0 left-0 w-full h-screen  object-cover z-0"
   />
-  <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-white text-center px-4 bg-black/40">
+  <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-white text-center px-4 bg-black/20">
 
   <Badge className="mb-6 bg-blue-100 text-blue-900 border-blue-200">About Us</Badge>
     <h1 className="text-4xl md:text-5xl font-bold">
       PT Akses Connecting Nusaraya
     </h1>
-    <p className="mt-4 text-lg md:text-xl max-w-2xl">
+    <p className="mt-4 text-white md:text-xl max-w-2xl">
       Connecting Innovation to Indonesia’s Digital Future Delivering integrated telecom and IT infrastructure solutions with purpose and impact.
     </p>
   </div>

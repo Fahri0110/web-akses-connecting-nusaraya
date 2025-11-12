@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Button } from '@/components/ui/button'
-import { Menu, X, Phone, Network } from 'lucide-react'
+import { Menu, X, Phone, Network, MailIcon, GlobeIcon } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from "next/image";
 
@@ -88,7 +88,7 @@ export default function Navbar({ currentPage }: NavbarProps) {
             ))}
             <Link href="https://mail.hostinger.com/?_task=mail&_mbox=INBOX">
             <Button   className="bg-[#0F3C27] text-white border border-white px-4 py-2 rounded-lg hover:bg-[#4BAE4F] transition duration-300 ease-in-out">
-              <Phone className="w-4 h-4 mr-2" />
+              <GlobeIcon className="w-4 h-4 mr-2" />
               Webmail
             </Button>
             </Link>

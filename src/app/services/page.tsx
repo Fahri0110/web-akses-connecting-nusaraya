@@ -173,14 +173,14 @@ export default function Services() {
       {/* Hero Section */}
       <section className="relative h-[65vh] overflow-hidden">
   <video
-        src="/media/tower.mp4" // ganti dengan nama video kamu
+        src="/media/tower done.mp4" // ganti dengan nama video kamu
         autoPlay
         loop
         muted
         playsInline
     className="absolute top-0 left-0 w-full h-[65vh]  object-cover z-0"
   />
-  <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-white text-center px-4 bg-black/40">
+  <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-white text-center px-4 bg-black/20">
 <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -393,10 +393,12 @@ export default function Services() {
                   Contac Us
                 </Button>
               </Link>
+              <Link href="mailto:info@akcon.co.id">
               <Button size="lg" className="bg-[#0F3C27] text-white  px-4 py-2 rounded-lg hover:bg-[#4BAE4F] transition duration-300 ease-in-out">
                 <Mail className="mr-2 w-5 h-5" />
                   Request Quote
               </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

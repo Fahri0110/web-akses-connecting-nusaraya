@@ -42,17 +42,18 @@ export default function Media() {
     },
     {
       id: 2,
-      title: "Kolaborasi PT AKCON dan SKYLINK",
-      excerpt: "Jakarta, JurnalPost.com – PT Akses Connecting Nusaraya (AKCON) dan PT Sinergi Innovate Pratama (SKYLINK) baru saja melangkah ke fase baru kolaborasi teknologi dengan menandatangani perjanjian kerjasama strategis pada Jumat, 20 September 2024. Dalam momen ini, kedua perusahaan sepakat untuk memajukan konektivitas di Indonesia melalui pemasaran layanan internet satelit Starlink, sebuah inovasi dari SpaceX yang didirikan oleh Elon Musk.",
-      category: "innovation",
-      author: "Annisa",
-      date: "21 September 2024",
-      image: "/media/skylink.png",
-      views: 890,
-      likes: 32,
-      comments: 8,
-      tags: ["IoT", "Smart City", "Inovasi", "Digital"],
-      Link: "https://jurnalpost.com/akcon-dan-skylink-jalin-kerjasama-strategis-digitalisasi-seluruh-negeri-dengan-starlink/72456/",
+      title: "Perusahaan Bidang Tambang, Komunikasi dan Properti Bangun Kemitraan Strategis ",
+      excerpt: "Jakarta, Gatra.com - PT Akses Connecting Nusaraya (AKCON), PT Edotco Infrastruktur Indonesia, dan PT PAM Aneka Mineral meneken kerjasama bisnis pada Jumat, (23/02) lalu, berupa penandatanganan Lease Agreement yang menjadi kesepakatan bersejarah, karena melibatkan kerjasama tiga pelaku usaha di sektor industri berbeda, yaitu sektor telekomunikasi dan pertambangan juga properti.",
+      category: "news",
+      author: "Ms Widodo",
+      date: "24 Februari 2024",
+      readTime: "",
+      image: "/media/pam.png",
+      views: 1560,
+      likes: 92,
+      comments: 15,
+      tags: ["News", "Achievement", "Technology", "Recognition"],
+      Link: "https://www.gatra.com/news-593400-ekonomi-perusahaan-bidang-tambang-komunikasi-dan-properti-bangun-kemitraan-strategis.html",
     },
     {
       id: 3,
@@ -70,18 +71,17 @@ export default function Media() {
     },
     {
       id: 4,
-      title: "Perusahaan Bidang Tambang, Komunikasi dan Properti Bangun Kemitraan Strategis ",
-      excerpt: "Jakarta, Gatra.com - PT Akses Connecting Nusaraya (AKCON), PT Edotco Infrastruktur Indonesia, dan PT PAM Aneka Mineral meneken kerjasama bisnis pada Jumat, (23/02) lalu, berupa penandatanganan Lease Agreement yang menjadi kesepakatan bersejarah, karena melibatkan kerjasama tiga pelaku usaha di sektor industri berbeda, yaitu sektor telekomunikasi dan pertambangan juga properti.",
-      category: "News",
-      author: "Marketing Team",
-      date: "24 Februari 2024",
-      readTime: "",
-      image: "/media/pam.png",
-      views: 1560,
-      likes: 92,
-      comments: 15,
-      tags: ["News", "Achievement", "Technology", "Recognition"],
-      Link: "https://www.gatra.com/news-593400-ekonomi-perusahaan-bidang-tambang-komunikasi-dan-properti-bangun-kemitraan-strategis.html",
+      title: "Kolaborasi PT AKCON dan SKYLINK",
+      excerpt: "Jakarta, JurnalPost.com – PT Akses Connecting Nusaraya (AKCON) dan PT Sinergi Innovate Pratama (SKYLINK) baru saja melangkah ke fase baru kolaborasi teknologi dengan menandatangani perjanjian kerjasama strategis pada Jumat, 20 September 2024. Dalam momen ini, kedua perusahaan sepakat untuk memajukan konektivitas di Indonesia melalui pemasaran layanan internet satelit Starlink, sebuah inovasi dari SpaceX yang didirikan oleh Elon Musk.",
+      category: "news",
+      author: "Annisa",
+      date: "21 September 2024",
+      image: "/media/skylink.png",
+      views: 890,
+      likes: 32,
+      comments: 8,
+      tags: ["IoT", "Smart City", "Inovasi", "Digital"],
+      Link: "https://jurnalpost.com/akcon-dan-skylink-jalin-kerjasama-strategis-digitalisasi-seluruh-negeri-dengan-starlink/72456/",
     }
   ]
 
@@ -131,13 +131,12 @@ export default function Media() {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            
             <Badge className="mb-6 bg-blue-100 text-blue-900 border-blue-200">Media & Updates</Badge>
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
               Latest News &
               <span className="text-green-950"> Articles</span>
             </h1>
-            <p className="text-xl text-green-950 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Get the latest updates on AKCON’s projects, innovations, and achievements in the telecommunications and IT industry
             </p>
           </motion.div>
@@ -167,6 +166,7 @@ export default function Media() {
                 href={article.Link}
                 target="_blank"
               >
+                
                 <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-0 shadow-md overflow-hidden group cursor-pointer">
                   <div className="relative overflow-hidden">
                     <img
@@ -203,10 +203,7 @@ export default function Media() {
                           <span>{article.date}</span>
                         </div>
                       </div>
-                      <div className="flex items-center space-x-1">
-                        <Clock className="w-4 h-4" />
-                        <span>{article.readTime}</span>
-                      </div>
+                     
                     </div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4 text-sm text-gray-500">
@@ -222,9 +219,12 @@ export default function Media() {
                           <MessageCircle className="w-4 h-4" />
                           <span>{article.comments}</span>
                         </div>
+                        
                       </div>
-                      <ChevronRight className="w-5 h-5 text-blue-900 group-hover:translate-x-1 transition-transform" />
-                    </div>
+                       <Button size="sm" variant="ghost" className="text-blue-900 hover:bg-blue-50 p-0 h-auto">
+                        Read more
+                        <ChevronRight className="w-4 h-4 ml-1" />
+                      </Button> </div>
                   </CardContent>
                 </Card>
               </motion.a>
@@ -242,6 +242,7 @@ export default function Media() {
             transition={{ duration: 0.6 }}
             className="mb-8"
           >
+            
             <h2 className="text-3xl font-bold text-gray-900 mb-6">All Articles</h2>
             
             {/* Search and Filters */}
@@ -257,6 +258,7 @@ export default function Media() {
                   />
                 </div>
               </div>
+              
               <div className="flex flex-wrap gap-2">
                 {categories.map((category) => (
                   <Button
@@ -310,7 +312,7 @@ export default function Media() {
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
                       <div className="flex items-center space-x-3">
                         <span>{article.date}</span>
-                        <span>•</span>
+                        
                         <span>{article.readTime}</span>
                       </div>
                       <div className="flex items-center space-x-2">
